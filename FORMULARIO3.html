@@ -1,0 +1,76 @@
+<html>
+<head>
+   <title> Formulario en HTML</title>
+</head>
+
+<p>Matricula al campeonato de moto gp</p>
+
+<body style="background-color:blue;">
+  <figure>
+   <img src="descarga1.jpg"alt="imagen con tamaño" width="500" height="300">
+  </figure>
+
+<form action="procesar.php"method="POST">
+  <!--etiqueta de campo-->
+  <label for="nombre">Nombre del participante :</label>
+  <!--campo de entrada-->
+  <input type="text" id="nombre" name="nombre" required>
+  <br><br>
+ 
+  
+  <!--etiqueta de campo-->
+  <label for="nombre">Edad :</label>
+  <!--campo de entrada-->
+  <input type="text" id="edad" name="edad required>
+   <br><br>
+
+  <!--etiqueta de campo-->
+  <label for="nombre">Camiseta  :</label>
+  <!--campo de entrada-->
+  <input type="text" id="numero" name="numero required>
+  <br><br>
+
+<!-- Menú desplegable -->
+
+  <label for="opciones">Sexo:</label>
+      <select id="opciones" onchange="irAEnlace()">
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="no contestar">No contestar</option>
+  </select>
+  <br><br>
+
+
+<!-- Menú desplegable -->
+  <label for="opciones">Categoria:</label>
+      <select id="opciones" onchange="irAEnlace()">
+        <option value="motogp">MOTO GP</option>
+        <option value="moto3">MOTO 3</option>
+        <option value="moto2">MOTO 2</option>
+</select>
+<br><br>
+
+
+
+<!-- Menú desplegable -->
+  <label for="opciones">Provincia :</label>
+      <select id="opciones" onchange="irAEnlace()">
+        <option value="san jose">San José </option>
+        <option value="alajuela ">Alajuela </option>
+        <option value="puntarenas ">Puntarenas </option>
+        <option value="guanacaste ">Guanacaste </option>
+        <option value="cartago">Cartago</option>
+        <option value="liberia ">Libaria </option>
+        <option value="heredia ">Heredia </option>
+</select>
+<br><br>
+
+  
+<!-- Botón -->
+  <button type="submit">Completo</button>
+</form>
+
+
+
+</body>
+</html>
